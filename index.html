@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarknessSMP | Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- NAV -->
+        <nav class="top-nav">
+            <div class="nav-inner">
+                <div class="nav-logo">DarknessSMP</div>
+                <div class="nav-links">
+                    <a href="#home" onclick="showSection('home')">Home</a>
+                    <a href="#rules" onclick="showSection('rules')">Rules</a>
+                    <a href="#staff" onclick="showSection('staff')">Staff</a>
+                    <a href="#store" onclick="showSection('store')">Store</a>
+                    <a href="https://discord.gg/zdaUByyf4b" target="_blank" class="discord-btn"><i class="fa-brands fa-discord"></i> Discord</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HOME -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="server-title">DarknessSMP</div>
+                    <p class="server-subtitle">A Survival Minecraft Experience</p>
+                    <div class="ip-wrapper">
+                        <div class="ip-block" onclick="copyIP(this)">
+                            <span class="ip-text">Play.DarknessSMP.net</span>
+                            <span class="copy-hint"><i class="fa fa-copy"></i> Click to Copy</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="https://discord.gg/zdaUByyf4b" target="_blank" class="btn-primary"><i class="fa-brands fa-discord"></i> Join Discord</a>
+                        <a href="#store" onclick="showSection('store')" class="btn-secondary"><i class="fa fa-store"></i> Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="container">
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fa fa-sword"></i>
+                            <h3>Survival</h3>
+                            <p>Classic survival gameplay with a competitive twist.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fa fa-users"></i>
+                            <h3>Community</h3>
+                            <p>A growing community of players from around the world.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fa fa-shield"></i>
+                            <h3>Anti-Cheat</h3>
+                            <p>Protected by advanced anti-cheat systems.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fa fa-bolt"></i>
+                            <h3>1.21.4</h3>
+                            <p>Running the latest version of Minecraft.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES -->
+        <section id="rules" class="section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Server Rules</h1>
+                    <p>Follow these rules to keep DarknessSMP fun for everyone.</p>
+                </div>
+                <div class="rules-list">
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">1</span> No Hacking or Cheating</div>
+                        <div class="rule-body">Using hacked clients, X-ray, or any cheat mods is strictly prohibited and will result in a permanent ban.</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">2</span> No Griefing</div>
+                        <div class="rule-body">Destroying or stealing from other players' builds without permission is not allowed.</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">3</span> No Spamming or Advertising</div>
+                        <div class="rule-body">Do not spam chat or advertise other servers. This will result in a mute or ban.</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">4</span> Respect All Players</div>
+                        <div class="rule-body">Harassment, racism, or any form of toxic behaviour will not be tolerated.</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">5</span> No Exploiting Bugs</div>
+                        <div class="rule-body">If you find a bug or exploit, report it to staff. Abusing exploits is bannable.</div>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-header"><span class="rule-num">6</span> Listen to Staff</div>
+                        <div class="rule-body">Follow instructions from staff members. If you believe a decision was unfair, appeal on Discord.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STAFF -->
+        <section id="staff" class="section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Our Staff</h1>
+                    <p>The team behind DarknessSMP.</p>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card founder">
+                        <div class="staff-avatar">
+                            <img src="https://mc-heads.net/avatar/DrDeathmc/100" alt="DrDeathmc">
+                        </div>
+                        <div class="staff-name">DrDeathmc</div>
+                        <div class="staff-role founder-role">Founder</div>
+                    </div>
+                    <div class="staff-card owner">
+                        <div class="staff-avatar">
+                            <img src="https://mc-heads.net/avatar/Itzbebeonmc/100" alt="Itzbebeonmc">
+                        </div>
+                        <div class="staff-name">Itzbebeonmc</div>
+                        <div class="staff-role owner-role">Owner / Dev</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORE -->
+        <section id="store" class="section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Store</h1>
+                    <p>Support the server and get exclusive perks.</p>
+                </div>
+                <div class="store-coming">
+                    <i class="fa fa-store"></i>
+                    <h2>Store Coming Soon</h2>
+                    <p>Our store is currently being set up. Join the Discord to stay updated on when it launches!</p>
+                    <a href="https://discord.gg/zdaUByyf4b" target="_blank" class="btn-primary"><i class="fa-brands fa-discord"></i> Join Discord</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="foot">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-left">
+                        <span class="footer-logo">DarknessSMP</span>
+                        <p>Not affiliated with Mojang Studios.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#home" onclick="showSection('home')">Home</a>
+                        <a href="#rules" onclick="showSection('rules')">Rules</a>
+                        <a href="#staff" onclick="showSection('staff')">Staff</a>
+                        <a href="#store" onclick="showSection('store')">Store</a>
+                        <a href="https://discord.gg/zdaUByyf4b" target="_blank">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="copy-toast" class="toast">Copied to clipboard!</div>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+            if (link) link.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function copyIP(el) {
+            navigator.clipboard.writeText('Play.DarknessSMP.net').then(() => {
+                const toast = document.getElementById('copy-toast');
+                toast.classList.add('show');
+                setTimeout(() => toast.classList.remove('show'), 2000);
+            });
+        }
+
+        // Set active nav on load
+        document.querySelector('.nav-links a[href="#home"]').classList.add('active');
+    </script>
+
+</body>
+</html>
